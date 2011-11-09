@@ -1,0 +1,9 @@
+MD5-Graph
+
+MD5-Graph is a simple graphing algorithm for the MD5 hash written in Matlab. It takes a long dictionary list of passwords, hashes them and then graphs them on a scatterplot. The idea behind this was to observe whether or not there is a graphical pattern to finding hash collisions, and if this could speed up the process of cracking a hash.
+
+A sample result (split_1_180k.fig) shows that the hashes are split into 'bands'. This result is only based off of 180k passwords from the dictionary list. The graphing was done naively, by splitting the hash in two and using the first digits for the x axis, and the second digits for the y axis. A better method might be to graph in 4D space, using 4 bytes for each axis.
+
+Whether this technique is applicable to other types of hashes also has not been tested. This could be an interesting way to compare hashes.
+
+Alex Aylwin, 2011
